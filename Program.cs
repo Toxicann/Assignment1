@@ -7,7 +7,7 @@ class Program
         Program program = new Program();
         string ifcont = "N";
 
-        for (; ; )
+        for (; ; )   //Forever loop.. only exits if a certain condition is met
         {
             Console.WriteLine("Choose:\n 1. Simple Interest\n 2. Compound Interest\n 3. Area Of Circle\n 4. Volume of Sphere\n 5. BMI calculation\n 6. Gravitational Force\n 7. MassEnergy Equivalence");
             int switch_on = Int16.Parse(Console.ReadLine());
@@ -52,7 +52,7 @@ class Program
             if (ifcont == "Y")
                 continue;
             else
-                Environment.Exit(1);
+                Environment.Exit(1);  // condition to exit from forever loop
         }
 
     }
